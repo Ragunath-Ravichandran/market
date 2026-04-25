@@ -1,0 +1,53 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+LICENSE
+DEPLOYMENT.md
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+
+# Development
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Frontend
+frontend/node_modules
+frontend/dist
+frontend/build
+frontend/.vite
+frontend/*.tgz
+frontend/npm-debug.log
+frontend/yarn-error.log
+
+# Backend
+backend/venv
+backend/__pycache__
+backend/*.pyc
+backend/.env
+backend/.pytest_cache
+backend/.mypy_cache
+
+# Environment
+.env
+.env.local
+*.env.local
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+*.egg-info
