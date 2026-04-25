@@ -107,42 +107,6 @@ The application will be available at `http://localhost:5173`
 - **GET `/health`** - Health check endpoint
   - Returns: `{"status": "healthy"}`
 
-## 🌍 Deployment
-
-### Frontend - GitHub Pages
-
-The frontend is automatically built and deployed to GitHub Pages on every push to `main`/`master`.
-
-**Manual deployment:**
-```bash
-cd frontend
-npm run build
-# Contents of dist/ are deployed to GitHub Pages
-```
-
-Visit: `https://Ragunath-Ravichandran.github.io/market/`
-
-### Backend - Render.com
-
-1. Connect your GitHub repository to Render
-2. Create a new Web Service
-3. Set runtime to Python 3.11
-4. Build command: `pip install -r backend/requirements.txt`
-5. Start command: `cd backend && uvicorn main:app --host 0.0.0.0 --port 8000`
-6. Add environment variables in Render dashboard:
-   - `GROQ_API_KEY`
-   - `GOOGLE_API_KEY`
-   - `TAVILY_API_KEY`
-
-**Deploy to Render**: https://render.com
-
-### Alternative Backend Hosting
-
-- **Railway.app**: `railway up`
-- **Heroku**: `git push heroku main`
-- **Vercel**: With Python support via Serverless Functions
-- **AWS**: Lambda or EC2 with Docker
-
 ## 🔄 CI/CD Pipeline
 
 Automated workflows run on every push:
